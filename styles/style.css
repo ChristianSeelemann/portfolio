@@ -31,7 +31,7 @@ footer .wrapper {
 footer .wrapper .links li {
   list-style: none;
   display: inline;
-  margin: 0 0.5em;
+  margin: 0 0.75em;
 }
 footer .wrapper .links a:hover {
   color: rgba(76, 201, 240, 1);
@@ -124,4 +124,54 @@ footer .wrapper .logo {
   color: #8b8b8b;
   font-weight: 400;
   font-size: 0.75em;
+}
+header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 3em 4em 3em;
+}
+header .logo {
+  font-family: "Russo One", sans-serif;
+  font-size: 1.5em;
+  justify-self: start;
+  text-transform: uppercase;
+  align-self: center;
+}
+header .content {
+  justify-self: end;
+}
+header .content a {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.75em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding: 0 0.5em 0.3em 0.5em;
+}
+header .content a:first-child {
+  margin-left: 0;
+  border-bottom: 0.25em solid rgba(247, 37, 133, 1);
+}
+header .content a:first-child:hover {
+  border-bottom-color: rgba(76, 201, 240, 1);
+  transition: 500ms all;
+  color: rgba(76, 201, 240, 1);
+}
+header .content a:nth-child(2) {
+  border-bottom: 0.25em solid rgba(58, 12, 163, 1);
+}
+header .content a:nth-child(2):hover {
+  border-bottom-color: rgba(67, 97, 238, 1);
+  transition: 500ms all;
+  color: rgba(67, 97, 238, 1);
+}
+header .content a:last-child {
+  margin-right: 0;
+  border-bottom: 0.25em solid rgba(76, 201, 240, 1);
+}
+header .content a:last-child:hover {
+  border-bottom-color: rgba(247, 37, 133, 1);
+  transition: 500ms all;
+  color: rgba(247, 37, 133, 1);
 }
