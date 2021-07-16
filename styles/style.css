@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@300;400;500;600&family=Russo+One&display=swap");
 
 *,
 *::before,
@@ -55,7 +55,7 @@ footer .wrapper .logo {
 
 #endrow {
   height: 0.8em;
-  margin: 0 1em;
+  margin: 0 1em 1em 1em;
   background: rgb(247, 37, 133);
   background: linear-gradient(
     90deg,
@@ -150,7 +150,7 @@ header {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: 2em 3em 4em 3em;
+  margin: 2em 3em 0 3em;
 }
 
 header .logo {
@@ -171,8 +171,9 @@ header .content a {
   margin: 0 0.75em;
   font-size: 1.1em;
   text-transform: uppercase;
-  padding: 0 0.5em 0.3em 0.5em;
+  padding: 0 0.8em 0.3em 0.8em;
   letter-spacing: 0.05em;
+  border-radius: 0 0 0.6em 0.4em;
 }
 
 header .content a:first-child {
@@ -205,4 +206,68 @@ header .content a:last-child:hover {
   border-bottom-color: rgba(247, 37, 133, 1);
   transition: 500ms all;
   color: rgba(247, 37, 133, 1);
+}
+
+#hero {
+  margin: 4em 6em 0 6em;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#hero .left {
+  justify-self: center;
+}
+
+#hero .left .name {
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 0.85em;
+  letter-spacing: 0.03em;
+}
+
+#hero .left .name span {
+  font-size: 0.65em;
+}
+
+#hero .left .job {
+  text-transform: uppercase;
+  margin: 1.5em 0 1.5em 0;
+  color: rgba(67, 97, 238, 1);
+  font-weight: 500;
+}
+
+#hero .left .about {
+  color: rgb(141, 141, 141);
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  font-family: "Caveat", cursive;
+}
+
+#hero .left button {
+  all: unset;
+  border-radius: 1em;
+  background: rgb(241, 25, 124);
+  background: linear-gradient(
+    128deg,
+    rgba(241, 25, 124, 1) 0%,
+    rgba(254, 63, 150, 1) 100%
+  );
+  color: rgb(255, 245, 249);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 1em 1.5em;
+  letter-spacing: 0.05em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#hero .artwork {
+  justify-self: end;
+}
+
+#hero img {
+  max-width: 100%;
+  position: relative;
+  top: 0.6em;
 }
