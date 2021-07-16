@@ -24,7 +24,7 @@ footer .wrapper {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 2fr 1fr;
-  margin: 7em 3em 1.5em 3em;
+  margin: 7em 3em 1.8em 3em;
   align-items: center;
   justify-items: center;
   font-weight: 400;
@@ -51,6 +51,7 @@ footer .wrapper .logo {
   justify-self: start;
   font-family: "Russo One", sans-serif;
   font-size: 1.5em;
+  align-self: end;
 }
 
 #endrow {
@@ -209,11 +210,11 @@ header .content a:last-child:hover {
 }
 
 #hero {
-  margin: 4em 6em 0 6em;
+  margin: 4em 6em 6em 6em;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 #hero .left {
@@ -270,4 +271,113 @@ header .content a:last-child:hover {
   max-width: 100%;
   position: relative;
   top: 0.6em;
+}
+
+#skills {
+  margin: 0 3em 8em 3em;
+  display: grid;
+}
+
+#skills .item {
+  width: 90%;
+  margin: 2em 0;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#skills .item:first-child {
+  margin-top: 0;
+}
+
+#skills .item:last-child {
+  margin-bottom: 0;
+}
+
+#skills .item:nth-child(odd) {
+  justify-self: end;
+}
+
+#skills .item:nth-child(1) {
+  background: rgb(255, 233, 243);
+}
+
+#skills .item:nth-child(2) {
+  background: rgb(240, 219, 255);
+}
+
+#skills .item:nth-child(3) {
+  background: rgb(187, 168, 229);
+}
+
+#skills .item:nth-child(4) {
+  background: rgb(184, 193, 231);
+}
+
+#skills .item:nth-child(5) {
+  background: rgb(191, 226, 236);
+}
+
+#skills .item .content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+#skills .item .content img {
+  max-width: 100%;
+  max-height: 13em;
+  border-radius: 6em 3em 2em 4em;
+}
+
+#skills .item:nth-child(even) .content img {
+  border-radius: 2em 6em 5em 4em;
+}
+
+#skills .item .left {
+  padding: 1em;
+}
+
+#skills .item .left i {
+  padding: 0.6em;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#skills .item:nth-child(1) .left i {
+  background: rgba(247, 37, 133, 1);
+}
+
+#skills .item:nth-child(2) .left i {
+  background: rgba(114, 9, 183, 1);
+}
+
+#skills .item:nth-child(3) .left i {
+  background: rgba(58, 12, 163, 1);
+}
+
+#skills .item:nth-child(4) .left i {
+  background: rgba(67, 97, 238, 1);
+}
+
+#skills .item:nth-child(5) .left i {
+  background: rgba(76, 201, 240, 1);
+}
+
+#skills .item .left .skillname {
+  margin-bottom: 0.8em;
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+#skills .item .left p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#skills .item .content .right {
+  align-self: center;
+  justify-self: end;
 }
