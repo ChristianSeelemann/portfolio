@@ -148,6 +148,7 @@ header .content a {
   font-size: 1.1em;
   text-transform: uppercase;
   padding: 0 0.5em 0.3em 0.5em;
+  letter-spacing: 0.05em;
 }
 header .content a:first-child {
   margin-left: 0;
